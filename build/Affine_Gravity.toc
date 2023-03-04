@@ -1,11 +1,8 @@
 \contentsline {section}{\numberline {1}Introduction}{1}{}%
 \contentsline {section}{\numberline {2}Polynomial Affine Gravity}{1}{}%
-\contentsline {section}{\numberline {3}Cosmological solutions in the abscence of torsion}{2}{}%
-\contentsline {subsection}{\numberline {3.1}$\mathcal {R}_{\beta \gamma } = 0$}{3}{}%
-\contentsline {subsection}{\numberline {3.2}$\nabla _{\alpha }\mathcal {R}_{\beta \gamma } = 0$}{3}{}%
-\contentsline {subsection}{\numberline {3.3}$\nabla _{[\alpha }\mathcal {R}_{\beta ]\gamma } = 0$}{4}{}%
-\contentsline {section}{\numberline {4}Cosmological solutions with torsion}{4}{}%
-\contentsline {section}{\numberline {5}Conclusions}{4}{}%
-\contentsline {section}{\numberline {6}Appendix A: Dimensional Analysis}{4}{}%
-\contentsline {section}{\numberline {7}Appendix B: Time coordinate reparametrization}{5}{}%
+\contentsline {section}{\numberline {3}Cosmological solutions without torsion}{2}{}%
+\contentsline {section}{\numberline {4}Cosmological solutions with torsion}{3}{}%
+\contentsline {section}{\numberline {5}Conclusions}{3}{}%
+\contentsline {section}{\numberline {6}Appendix A: Dimensional Analysis}{3}{}%
+\contentsline {section}{\numberline {7}Appendix B: Time coordinate reparametrization}{4}{}%
 \contentsline {section}{\numberline {8}Appendix C: Complete set of field equations}{5}{}%

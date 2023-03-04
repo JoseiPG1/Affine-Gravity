@@ -117,19 +117,16 @@ connection $\Gamma_{\mu}{}^{\sigma}{}_{\nu}$ is
       \Gamma_{t}{ }^{i}{ }_{j} &= h(t) \delta^{i}_{j}, \quad \Gamma_{i}{ }^{j}{ }_{k}= \gamma_{i}{ }^{j}{ }_{k}
 \end{align}
 Notice that $f(t)$ affine function can vanishes completely by a time reparametrization. The same procedure applies to build the ansatz for the torsion tensor. The traceless part of the torsion 
-tensor $\mathcal{B}_{\mu}{}^{\sigma}{}_{\nu}$ is completely define by only one time depending function
+tensor $\mathcal{B}_{\mu}{}^{\sigma}{}_{\nu}$ and its vectorial part $\mathcal{A}_\mu$ is completely define by only one time depending function
 \begin{align*}
     \mathcal{B}_{\theta}{ }^{r}{ }_{\varphi} & = \psi (t) r^2\sin\theta \sqrt{1 - \kappa r^2} &
     \mathcal{B}_{r}{}^{\theta}{}_{\varphi} & =\frac{\psi (t) \sin \theta}{\sqrt{1 - \kappa r^2}} \\
-    \mathcal{B}_{r}{}^{\varphi}{}_{\theta} & =\frac{\psi(t)}{ \sqrt{1-\kappa r^{2}} \sin \theta}
+    \mathcal{B}_{r}{}^{\varphi}{}_{\theta} & =\frac{\psi(t)}{ \sqrt{1-\kappa r^{2}} \sin \theta} & \mathcal{A}_{t} & = \eta(t)
 \end{align*}
-and finally, the vectorial torsion tensor $\mathcal{A}_\mu$ is given by
-\begin{align}
-    \mathcal{A}_{t} = \eta(t)
-\end{align}
 
 
-\section{Cosmological solutions in the abscence of torsion}
+
+\section{Cosmological solutions without torsion}
 
 The field equation its given by 
 \begin{equation}
@@ -141,20 +138,20 @@ from here we distinguish three types of families solutions
 \end{align}
 Here we briefly review all the possible solutions to the field equations under the cosmological ansatz.
 
-\subsection{$\mathcal{R}_{\beta\gamma} = 0$}
-
-Here we have two differential equations named
+The first type of solution requires that the Ricci tensor vanishes completly meaning $\mathcal{R}_{\beta\gamma} = 0$, this lead to two
+differential equations
 \begin{align}
   \dot{h} + h^2 & = 0 & \dot{g} + gh + 2\kappa & = 0
 \end{align}
-The two equations can be solved exactly as
+The two equations can be solved exactly as follow
 \begin{align}
   h(t) & = \frac{1}{t - h_0} & g(t) & =  \frac{t\kappa\left(2h_0 - t\right) - g_0}{t - h_0}
 \end{align}
+Notice that in this scenario we do not have an emergent metric tensor.
 
-\subsection{$\nabla_{\alpha}\mathcal{R}_{\beta\gamma}  = 0$}
 
-Here we have three differential equations named
+The second type of solution requires that Ricci's covariant derivative vanishes $\nabla_{\alpha}\mathcal{R}_{\beta\gamma}  = 0$. This lead to
+three differential equations system
 \begin{align}
   \ddot{h} + 2h\dot{h} & = 0 \\
   2gh^2 - 2\kappa h - h\dot{g} + 3g\dot{h} & = 0 \\
@@ -164,12 +161,12 @@ The system of differential equations can be solve analytically by the functions
 \begin{align}
   h(t) & = \sqrt{c_0}\tanh\left(\sqrt{c_0}t\right) & g(t) & = \frac{\kappa \sinh{2t\sqrt{c_0}}}{2\sqrt{c_0}} 
 \end{align}
-Notice that for a flat space-time requirement $\kappa = 0$, then the $g(t)$ affine functions vanishes, while the $h(t)$ remains un changed.
+Notice that for a flat space-time requirement $\kappa = 0$, then the $g(t)$ affine functions vanishes, while the $h(t)$ remains un changed, moreover,
+the spatial part of the Ricci tensor vanishes, therefore the emergent metric its degenerate. However, if $\kappa \neq 0$ then the solution does 
+not vanishes the Ricci tensor, meaning that in this case we do have an emergent metric tensor.
 
 
-\subsection{$\nabla_{[\alpha}\mathcal{R}_{\beta]\gamma}  = 0$}
-
-Here we have one differential equation named
+The third type of solution requires that $\nabla_{[\alpha}\mathcal{R}_{\beta]\gamma}  = 0$, this lead to just one differential equation
 \begin{align}
   4gh^2 + 2\kappa h + 2g\dot{h} - \ddot{g} = 0
 \end{align}
