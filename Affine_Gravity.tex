@@ -19,24 +19,14 @@
 
 \begin{abstract}
   The Polynomial Affine Gravity its a purely affine model that mediates gravitational interactions solely and exclusive through the
-  affine connection instead of the metric tensor. In this paper we couple a scalar field through \textit{inverse tensor densities} and 
-  its potential energy to the volume form. We formulte an effective action in the torsion-free sector couple with the scalar field and
-  study the cosmological solutions.
+  affine connection instead of the metric tensor. In this paper we study solutions to the field equations including the presence of the torsion.
+  Then, we study the cosmological consequence of using the Ricci tensor and Poplaswki's torison-metric tensor under the cosmological solutions.
 \end{abstract}
 
 \tableofcontents
 
 \section{Introduction}
 
-General Relativity, being so far the most successful model of gravitational interactions, is the ground basis of the standard model 
-of cosmology, also known as $\Lambda$CDM. However, the later rely in a number of additional ingredients to describe consistently the evolution
-of the cosmos in a way that is compatible with the observations. It should be mentioned that the observations come from different ages of the Universe:
-cosmic microwave background, big bang nucleo-synthesis and baryon acoustic oscillations: and there are also additional observations coming from 
-gravitational lenses and gravitational waves.
-
-Nonetheless, at any early stage of the Universe it is need an inflationary epoch with the purpose of solving the flatness and horizon problems. The
-inflation is generally induced by a scalar field which couples to the gravitiational sector and possesses a self-interacting term that
-determines the prices conditions of the model.
 
 \section{Polynomial Affine Gravity}
 
@@ -51,8 +41,6 @@ have an affine connection $\Gamma$ we can only deffine the following chain of ge
 
 Notice that in the absence of the metric tensor it is not possible to define the $\mathcal{R}$.
 
-\subsection{The action}
-
 In order to built the action of the Polynomial Affine Gravity we use the irreducible fields of the affine connection,
 by separating the connection into its symmetric and antisymmetric part
 
@@ -66,14 +54,6 @@ form, which can be written using only the wedge product
 
 \begin{equation}
   \mathrm{d}V^{\alpha\beta\gamma\delta} = J(x)\mathrm{d}x^{\alpha}\wedge\mathrm{d}x^{\beta}\wedge\mathrm{d}x^{\gamma}\wedge\mathrm{d}x^{\delta}
-\end{equation}
-
-However, since we want to couple a scalar field $\phi (x)$ to this model, we need to introduce the potential energy of the 
-scalar field $\mathcal{V}(\phi)$. Inspired by the work of Hemza Azri in affine inflation, we couple the potential energy to
-the volume form in the following manner
-
-\begin{equation}
-  \mathrm{d}V^{\alpha\beta\gamma\delta} = \mathrm{d}\hat{V}^{\alpha\beta\gamma\delta}\frac{1}{\mathcal{V}(\phi)}
 \end{equation}
 
 The action must preserv the invariance under diffemorphism, which is why the symmetric part of the connection goes indirectly throught the 
@@ -125,36 +105,6 @@ In previous works we have mentioned some of the features of the action: (i) Its 
 (vi) The cosmological constant appears in the solutions as an integration constant, changing the paradigm concerning its interpretation; 
 (vii) The model can be extended to be coupled with a scalar field, and the field equations are equivalent to those of General Relativity interacting with a massless scalar field. 
 
-
-
-To couple the affine action to a scalar field, we need to introduce a kinetic term in the absence of the metric tensor. In order to do so, we build 
-\textit{inverse symmetric tensor densities}, by using the \textit{dimensional analysis structure technique}
-
-\begin{equation}
-    \mathrm{g}^{\mu\nu} = \left(\alpha \nabla_\lambda \mathcal{B}_{\rho}{ }^{\mu}{ }_{\sigma} + \beta \mathcal{A}_\lambda 
-    \mathcal{B}_{\rho}{ }^{\mu}{ }_{\sigma}\right)\mathrm{d}V^{\nu\lambda\rho\sigma} + \gamma \mathcal{B}_{\kappa}{ }^{\mu}{ }_{\lambda}
-    \mathcal{B}_{\rho}{ }^{\nu}{ }_{\sigma}\mathrm{d}V^{\kappa\lambda\rho\sigma}
-\end{equation}
-
-Using the above expression we can define the kinetic term 
-
-\begin{equation}
-    S_{\phi} = - \int \mathrm{g}^{\mu\nu} \partial_{\mu} \phi \partial_{\nu} \phi
-\end{equation}
-
-Since we want to work on the torsion-free sector, it is worth to notice that only the terms that are linear in the torsion will
-have a non-trivial contribution, $C_1$ and $C_2$. Additionally, since our connection its an \textit{equi-affine} connection, the trace of the
-Riemman tensor will vanish completly. Applying the same idea the to the scalar field action, only the $\alpha$ term survive. Thus,
-the effective action coupled with a scalar field is
-
-\begin{equation*}
-    S_{ef} = \int  \mathrm{d}V^{\alpha \beta \gamma \delta} \bigg[ C_1 \mathcal{R}_{\mu\alpha}{}^{\mu}{}_{\nu} - 
-    \alpha \partial_{\alpha}\phi \partial_{\nu}\bigg]\nabla_\beta \mathcal{B}_{\gamma}{}^{\nu}{}_{\delta}.
-\end{equation*}
-
-
-\subsection{Cosmological ansatz}
-
 In order to solve the field equations, one need to build an ansatz, since we want to do cosmology, we need to build an ansazts
 compatible with the symmetries of the cosmological principle, which are rotation and translations. It is possible to build an ansatz for our
 fundamental geometric objects using the Lie derivative along the Killing vector fields. The most general ansatz for the symmetric part of the 
@@ -165,8 +115,8 @@ connection $\Gamma_{\mu}{}^{\sigma}{}_{\nu}$ is
 \end{align}
 Notice that $f(t)$ affine function can vanishes completely by a time reparametrization.
 
-Since we are going to be working in the torsio-free sector, in principle there is no neccesity to compute the ansatz for the torsion tensor, however, just
-for the sake of completness, we are going to include them. The traceless part of the torsion tensor $\mathcal{B}_{\mu}{}^{\sigma}{}_{\nu}$ is completely define by only one time depending function
+The same procedure applies to build the ansatz for the torsion tensor. The traceless part of the torsion 
+tensor $\mathcal{B}_{\mu}{}^{\sigma}{}_{\nu}$ is completely define by only one time depending function
 \begin{align*}
     \mathcal{B}_{\theta}{ }^{r}{ }_{\varphi} & = \psi (t) r^2\sin\theta \sqrt{1 - \kappa r^2} &
     \mathcal{B}_{r}{}^{\theta}{}_{\varphi} & =\frac{\psi (t) \sin \theta}{\sqrt{1 - \kappa r^2}} \\
@@ -177,23 +127,8 @@ and finally, the vectorial torsion tensor $\mathcal{A}_\mu$ is given by
     \mathcal{A}_{t} = \eta(t)
 \end{align}
 
-\subsection{The field equations}
 
-The field equations are obtained using Kiwosjki's formalism and taking into account the symmetries and properties of the fundamental fields, we 
-vary the action with respect to the fundamental fields. In the torsion-free limit, the field equation is
-\begin{equation}
-  \nabla_\mu \biggl[\frac{1}{\mathcal{V}(\phi)} \left(C \partial_\alpha \phi \partial_\lambda \phi - \mathcal{R}_{\alpha\lambda}\right)\mathrm{d}V^{\mu\nu\rho\alpha}\biggr] 
-  + \frac{2}{3}\nabla_\mu \biggl[ \frac{1}{\mathcal{V}(\phi)}\mathcal{R}_{\alpha\theta} \delta^{[\nu}_{\lambda}\mathrm{d}V^{\rho]\alpha\mu\theta} \biggr] = 0
-\end{equation}
-By multiplying the left hand side of the field equation by $\epsilon_{\nu\rho\tau\beta}$, the second term vanishes completly and the field 
-equation is reduced even further to
-\begin{equation}
-  \nabla_{[\mu}\left(\mathcal{R}_{\nu]\gamma}\frac{1}{\mathcal{V}(\phi)}\right) 
-  - C \nabla_{[\mu}\left(\partial_{\nu]} \phi \partial_\gamma \phi \frac{1}{\mathcal{V}(\phi)}\right) = 0
-\end{equation}
-This is the field equation in Polynomial Affine Graivity coupled with a scalar field in the torsion-free sector.
-
-\section{Briefly review of vacuum solutions}
+\section{Cosmological solutions in the abscence of torsion}
 
 The field equation its given by 
 \begin{equation}
@@ -267,295 +202,24 @@ Under the assumptions that $h(t) = \frac{\dot{a}}{a}$ and $g(t) = \dot{a}a$ the 
 which can only be solved numerically.
 
 
+\section{Cosmological solutions with torsion}
 
-
-\section{Cosmological solutions with the scalar field $\phi$}
-
-The field equation in the torsion-free sector coupled with a scalar field is given by
-\begin{equation}
-  \nabla_{[\mu}\left(\mathcal{R}_{\nu]\gamma}\frac{1}{\mathcal{V}(\phi)}\right) 
-  - C \nabla_{[\mu}\left(\partial_{\nu]} \phi \partial_\gamma \phi \frac{1}{\mathcal{V}(\phi)}\right) = 0
-\end{equation}
-which can be rewritten as
-\begin{equation}
-  \nabla_{[\mu}\mathcal{S}_{\nu]\gamma} = 0
-\end{equation}
-where the $\mathcal{S}_{\mu\nu}$ tensor is a symmetric tensor defined by
-\begin{equation}
-  \mathcal{S}_{\mu\nu} = \left(\mathcal{R}_{\mu\nu} - C \partial_{\mu} \phi \partial_\nu \phi \right)\frac{1}{\mathcal{V}(\phi)}
-\end{equation}
-From here, we distinguish three types of solutions
-\begin{align}
-  \mathcal{S}_{\mu\nu} & = 0 & \nabla_{\eta} \mathcal{S}_{\mu\nu} & = 0 & \nabla_{[\eta} \mathcal{S}_{\mu]\nu} & = 0
-\end{align}
-
-\subsection{$\mathcal{S}_{\mu\nu} = 0 $}
-
-In the case where the symmetric tensor $\mathcal{S}_{\mu\nu}$ vanishes completely we are left with two differential equations
-\begin{align}
-  \dot{h} + h^2 + C\dot{\phi}^2 & = 0 & \dot{g} + gh + 2\kappa & = 0
-\end{align}
-where the potential energy $\mathcal{V}(\phi)$ does not play any role. Here we have two unknown functions of time and the scalar field, the best we 
-can do is to solve the scalar field $\phi(t)$ in terms of the time derivative of the $h(t)$ function , as well as the $g(t)$ in terms of $h(t)$
-\begin{align}
-  \phi(t) & = \phi_0 \pm \int \mathrm{d}t \sqrt{\frac{\dot{h} + h^2}{-C}} & 
-  g(t) & = e^{- \int \mathrm{d}t \, h} \left( g_0 - 2 \kappa \int \mathrm{d}t \, e^{\int \mathrm{d}t \, h} \right)
-\end{align}
-
-If one desires to work in the frame where $h(t) = \dot{a}/a$ and $g(t) = \dot{a}a$, then the field equations are
-\begin{align}
-  \frac{\ddot{a}}{a} + C\dot{\phi}^2 & = 0 & 2\left(\kappa + \dot{a}^2\right) + a\ddot{a} & = 0
-\end{align}
-then, the scalar field is given by
-\begin{equation}
-  \phi(t) = \phi_0 \pm \int \sqrt{\frac{-\ddot{a}}{Ca}}d\hat{t}
-\end{equation}
-whereas the scale factor is given in temrs of an inverse function of the hypergeometric $2F_1$ function. In order to have a real scale factor, $\kappa$ 
-can not take the null value.
-
-
-\subsection{$\nabla_{\eta} \mathcal{S}_{\mu\nu} = 0 $}
-
-The second case its the affine parallel scenario, where the covariant derivative of the $\mathcal{S}_{\mu\nu}$ vanishes completely
-\begin{align}
-  0 & = C\mathcal{V}'\dot{\phi}^3-2C\mathcal{V}\dot{\phi}\ddot{\phi} - 3\mathcal{V}\left(2h\dot{h} + \ddot{h}\right) + 3\mathcal{V}'\dot{\phi}
-  \left(h^{2} + \dot{h}\right) \\
-  0 & = Cg\dot{\phi}^2 + 2gh^2 - 2\kappa h - h\dot{g} + 3g\dot{h} \\
-  0 & = \left(2gh^2 + 4\kappa h +h\dot{g} - g \dot{h} - \ddot{g}\right)\mathcal{V} + \left(gh + 2\kappa + \dot{g}\right)\mathcal{V}'\dot{\phi}
-\end{align}
-It is usual in cosmology to be working in a flat space-time meaning that $\kappa = 0$ and additionally, to impose the \textit{slow-roll} conditions,
-which are given by
-\begin{align}
-  \mathcal{V}(\phi) & \gg \dot{\phi}^{2}(t) & \mathcal{V}'(\phi) & \gg \ddot{\phi}(t)
-\end{align}
-Under the above assumptions, the system of differential equations is reduced to
-\begin{align}
-  0 & = C\mathcal{V}'\dot{\phi}^3 - 3\mathcal{V}\left(2h\dot{h} + \ddot{h}\right) + 3\mathcal{V}'\dot{\phi}
-  \left(h^{2} + \dot{h}\right) \\
-  0 & = Cg\dot{\phi}^2 + 2gh^2  - h\dot{g} + 3g\dot{h} \\
-  0 & = \left(2gh^2  +h\dot{g} - g \dot{h} - \ddot{g}\right)\mathcal{V} + \left(gh + \dot{g}\right)\mathcal{V}'\dot{\phi}
-\end{align}
-In cosmology, you give a potential energy term like \textit{Power-Law} or \textit{Starobinsky} and solve the field equations for the scale factor $a(t)$
-and the scalar field $\phi(t)$. Here, we are going the give the potential energy term and solve the field equations for the affine functions
-$h(t)$ and $g(t)$ and the scalar field $\phi(t)$.
-
-First we are going to work with the \textit{Power-Law} potential $\mathcal{V}(\phi) = \beta \phi^{j}(t)$, then the equations are
-\begin{align}
-  0 & = -6h\dot{h}\phi + 3 jh^2 \dot{\phi} + 3j\dot{h}\dot{\phi} + jC\dot{\phi}^3 - 3\phi \ddot{h} \\
-  0 & = -h\dot{g} + g\left(2h^2 + 3\dot{h} + C\dot{\phi}^2\right) \\
-  0 & = h\left(2gh + \dot{g} - g\dot{h}\right) + \frac{j(gh + \dot{g})\dot{\phi}}{\phi} - \ddot{g}
-\end{align}
-
-Notice that for our symmetric connection, comparing our connection coefficients with the ones already known in the FRW universe, we can deduced that
-$h(t) = \frac{\dot{a}}{a}$ and $g(t) = \dot{a}a$. Reeplacing those definitions in the system of differential equations, leads to
-\begin{align}
-  0 & = 3\phi \dot{a}\ddot{a} + a\left(jaC\dot{\phi}^3 + 3j \dot{\phi}\ddot{a} - 3\phi \dddot{a}\right) \\
-  0 & = -\frac{2\dot{a}^2}{a} + aC\dot{\phi}^2 + 2\ddot{a}\\
-  0 & = ja\dot{\phi}\left(2\dot{a}^2 + a\ddot{a}\right) + \phi\left(4\dot{a}^3 -3a\dot{a}\ddot{a} - a^2 \dddot{a}\right)
-\end{align}
-It is convenient to introduce the following variable change
-\begin{align}
-  \ddot{a} & = \dot{u}(t) & \dddot{a}(t) & = \ddot{u}(t) & \Phi(t) & = \frac{\dot{\phi}}{\phi}
-\end{align}
-In the above notation, the equations are written as
-\begin{align}
-  0 & = 3\ddot{u} + 3\dot{u}\left(-h- \Phi\right) - jaC\phi^2\Phi^3 \\
-  0 & = \frac{\dot{u}}{a} - h^2 + \frac{1}{2}C\dot{\phi}^2 \\
-  0 & = \ddot{u} + \dot{u}\left(3h - j\Phi\right) - 2ah^2\left(2h + j\Phi\right)
-\end{align}
-From the third equation, it is possible to find an expression for the scale factor
-\begin{equation}
-  a = \frac{\dot{u}\left(3h - j\Phi\right) + \ddot{u} }{2h^2\left(2h + j\Phi\right)}
-\end{equation}
-Reeplacing the above expresion for the scale factor in the first and second equation leads to
-\begin{align}
-  0 & = \ddot{u} - \dot{u}\left(\frac{12h^4 + 18jh^3\Phi + 6j^2h^2\Phi^2 + 3jCh\phi^2\Phi^3 - j^2\phi^2\Phi^4C}{12h^3 + 6jh^2\Phi - j\phi^2\Phi^3 C}\right) \\
-  0 & = \ddot{u} - \dot{u}\left(\frac{2h^2\left(h+3j\Phi\right)+C\left(3h - j\Phi\right)\dot{\phi}^2}{2h^2 - C\dot{\phi}^2}\right)
-\end{align}
-comparing the coefficients $\dot{u}$ yields to
-\begin{equation}
-  \frac{12h^4 + 18jh^3\Phi + 6j^2h^2\Phi^2 + 3jCh\phi^2\Phi^3 - j^2\phi^2\Phi^4C}{12h^3 + 6jh^2\Phi - j\phi^2\Phi^3 C} = \frac{2h^2\left(h+3j\Phi\right)+C\left(3h - j\Phi\right)\dot{\phi}^2}{2h^2 - C\dot{\phi}^2}
-\end{equation}
-which after some simplification, can be reduced to
-\begin{equation}
-  h\left(2h+j\Phi\right)\left(\frac{6h}{-12h^3-6jh^2\Phi +jC\phi^2\Phi^3} + \frac{1}{2h^2 - C\dot{\phi}}\right) = 0
-\end{equation}
-notice that we have three types of solution, however the most interesting solutions its coming from solving the second differential equation by replacing
-the hubble function $h(t)$ and $\Phi(t)$
-\begin{align}
-  \frac{\dot{\phi}}{\phi} + \frac{2\dot{a}}{aj} & = 0  \to  \phi(t)  = a(t)^{-2/j}\phi_0
-\end{align}
-From here, reeplacing the scalar field $\phi(t)$ in terms of the scale factor $a(t)$ into the two differential equations leads 
-\begin{equation}
-  \ddot{u} + 5\frac{\dot{u}\dot{a}}{a} = 0
-\end{equation}
-which in terms of only the scale factors 
-\begin{equation}
-  \dddot{a}+ 5\frac{\ddot{a}\dot{a}}{a} = 0
-\end{equation}
-Notice that the complexity of the differential equations system is reduced entirely by imposing the equality of the factors. The above differential equation
-for the scale factor can be solved analytically in terms of the inverse hypergeometric function. Additionally, it can be solved numerically.
-
-Next, lets work the Starobinsky's potential $\mathcal{V}(\phi) = \alpha \left(1 - e^{-\beta\phi}\right)^2$, then the system of differential equations
-is written as 
-\begin{align}
-  0 & = 6h\dot{h} + 6\beta\left(h^2 + \dot{h}\right)\dot{\phi} + 2\beta C\dot{\phi}^3 + 3\ddot{h} - 3e^{\beta\phi}\left(2h\dot{h} + \ddot{h}\right) \\
-  0 & = -h\dot{g} + g\left(2h^2 + 3\dot{h} + C\dot{\phi}^2\right) \\
-  0 & =  2e^{-\beta\phi}\left(gh + \dot{g}\right)\dot{\phi} + \left(1 - e^{-\beta\phi}\right)\left(h\left(2gh + \dot{g}\right) - g\dot{h} - \ddot{g}\right)
-\end{align}
-which can be rewritten just like the previous case in terms of the scale factor as
-\begin{align}
-  0 & = 3\left(-1 + e^{\beta\phi}\right)\dot{a}\ddot{a} + a\left(2\beta a C \dot{\phi}^3 + 6 \beta \dot{\phi}\ddot{a} - 3\left(-1 + e^{\beta\phi}\right)\right) \\
-  0 & = -\frac{2\dot{a}^2}{a} + aC\dot{\phi}^2 + 2\ddot{a}\\
-  0 & = 4\left(-1 + e^{\beta\phi}\right)\dot{a}^3 + 4\beta a \dot{a}^2\dot{\phi} - 3\left(-1 + e^{\beta\phi}\right)a\dot{a}\ddot{a} + a^2\left(2\beta\dot{\phi}\ddot{a} - \dddot{a}\left(-1 + e^{\beta\phi}\right)\right)
-\end{align}
-then, we introduce the new variables
-\begin{align}
-  \ddot{a}(t) & = \dot{u}(t) & \dddot{a}(t) & = \ddot{u} & \Phi (t) = (1 - e^{-\beta\phi})
-\end{align}
-in the new variables, the system of differential equations is rewritten as
-\begin{align}
-  0 & = 2\beta\dot{\phi}\left(3\dot{u} + a C\dot{\phi}^2\right) + 3e^{\beta\phi}\Phi \left(h\dot{u} - \ddot{u}\right) \\
-  0 & = 2\dot{u} + a\left(-2h^2 + C\dot{\phi}^2\right) \\
-  0 & = 2e^{-\beta\phi}\left(2ah^2 + \dot{u}\right)\dot{\phi} + \Phi\left(4ah^3 - 3h\dot{u}\ddot{u}\right)
-\end{align}
-from the third equation we can find an expression for the scale factor 
-\begin{equation}
-  a = \frac{-2\beta\dot{u}\dot{\phi} + e^{\beta\phi}\left(3h\dot{u} + \ddot{u}\right)}{4h^2\left(e^{\beta\phi}h\Phi + \beta\dot{\phi}\right)}
-\end{equation}
-reeplacing the above expression in the first and second equation leads to
-\begin{align}
-  0 & = \ddot{u} -\dot{u}\left( h + \frac{2e^{-\beta\phi}\beta\dot{\phi}}{\Phi} + \frac{4\beta C h\dot{\phi}^3}{6e^{\beta\phi}h^3\Phi + 6\beta h^2 \dot{\phi} - \beta C\dot{\phi}^3}\right) \\
-  0 & = \ddot{u} -\dot{u}\left(\frac{e^{\beta\phi}\left(-2\beta\dot{\phi}\left(-6h^2 + C\dot{\phi}^2\right) + e^{\beta\phi}h\Phi \left(2h^2 + 3C\dot{\phi}^2\right)\right)}{\Phi \left(2h^2 - C\dot{\phi}^2\right)}\right)
-\end{align}
-comparing both coefficients 
-\begin{equation}
-  h + \frac{2e^{-\beta\phi}\beta\dot{\phi}}{\Phi} + \frac{4\beta C h\dot{\phi}^3}{6e^{\beta\phi}h^3\Phi + 6\beta h^2 \dot{\phi} - 
-  \beta C\dot{\phi}^3} = \frac{e^{\beta\phi}\left(-2\beta\dot{\phi}\left(-6h^2 + C\dot{\phi}^2\right) + e^{\beta\phi}h\Phi 
-  \left(2h^2 + 3C\dot{\phi}^2\right)\right)}{\Phi \left(2h^2 - C\dot{\phi}^2\right)}
-\end{equation}
-after some simplification yields one equation
-\begin{equation}
-  0 = 2e^{-\beta \phi}h \left(e^{\beta\phi}h\Phi + \beta\dot{\phi}\right)\left(6\beta h^2 + 3e^{\beta\phi}C h\Phi \dot{\phi} - \beta C\dot{\phi}^2\right)
-\end{equation}
-notice that we can solve the first differential equation to find a relation between the scale factor and the scalar field
-\begin{equation}
-  \dot{\phi} + \frac{\dot{a}\left(-1 + e^{\beta\phi}\right)}{a\beta} = 0 \to \phi (t) = \frac{1}{\beta}\log\left(\frac{a}{ae^{\beta \phi_0} + a}\right)
-\end{equation}
-reeplacing the above the relation in the two equations leads to the same differential equations, which written in the original variables is
-\begin{align}
-  \dddot{a} + 5\frac{\ddot{a}\dot{a}}{a} = 0
-\end{align}
-Notice that this is the same equation for the \textit{Power-Law} potential.
-
-
-\subsection{$\nabla_{[\eta} \mathcal{S}_{\mu]\nu} = 0 $}
-
-Under the symmetries of the cosmological ansatz we only have one equation 
-\begin{equation}
-  C\mathcal{V}(\phi)g\dot{\phi}^2 + \mathcal{V}(\phi)\left(4gh^2 +2\kappa h + 2g\dot{h} - \ddot{g}\right) +
-  \mathcal{V}'(\phi)\dot{\phi}\left(gh + 2\kappa + \dot{g}\right) = 0
-\end{equation}
-Notice that here, we have the two affine functions $h(t)$ and $g(t)$, additionally, we have the scalar field $\phi (t)$ and its potential energy term
-$\mathcal{V}(\phi)$. Since we have one differential equation we can not find an analytically solution, even when the potential energy term is given.
-
-If one desires to work in the frame where $h(t) = \dot{a}/a$ and $g(t) = \dot{a}a$, then the field equation will have three unknown
-functions $a(t)$, $\phi(t)$, and $\mathcal{V}(\phi)$, which can not be solved analytically.
 
 \section{Conclusions}
 
 Some key points about this work
 
 \begin{itemize}
-  \item Coupling the kinetic term of the scalar field without using a metric tensor.
-  \item Recover general relativity coupled with a scalar field.
+  \item Polynomial Affine Gravity formulation.
   \item Briefly review of the vacuum solutions.
-  \item Extensive analysis of field equations coupled with a scalar field.
+  \item Extensive analysis of field equations with torsion.
 \end{itemize}
 
-\subsection{Flat solutions $\mathcal{R}_{\mu\nu} = 0$ and $\mathcal{S}_{\mu\nu} = 0$}
-
-Flat solutions $\mathcal{R}_{\mu\nu} = 0$ 
-
-\begin{itemize}
-  \item It is possible to find analyticall solutions.
-  \item The ricci tensor vanishes completly.
-  \item There are no emergent metric tensor.
-  \item Under the special parametrization, its possible to find exact solutions.
-  \item There are no constraints for $\kappa$
-\end{itemize}
-
-Flat solutions $\mathcal{S}_{\mu\nu} = 0$
- 
-\begin{itemize}
-  \item It is not possible to solve the field equations.
-  \item Under the special parametrization it is possible to find exact solutions.
-  \item The potential energy term plays no role.
-  \item There are constraints for $\kappa$
-  \item It is possible to go from $\mathcal{S} \leftrightarrow  \mathcal{R}$ under a suitable election of integration constant.
-\end{itemize}
-
-\subsection{Parallel solutions $\nabla_\sigma \mathcal{R}_{\mu\nu} = 0$ and $\nabla_\sigma \mathcal{S}_{\mu\nu} = 0$}
-
-For $\nabla_\sigma \mathcal{R}_{\mu\nu} = 0$ field equations
-\begin{itemize}
-  \item It is possible to solve $\nabla_\sigma \mathcal{R}_{\mu\nu} = 0$.
-  \item The solutions does not vanishes the spatial part of the Ricci tensor, so it can be used as a metric tensor.
-  \item The above is true only for $\kappa \neq 0$.
-  \item If $\kappa = 0$, then $g(t) = 0$ and the spatial part of the Ricci vanishes.
-  \item Therefore, to have an affine scale factor, it is required that $\kappa \neq 0$.
-  \item Under the special parametrization it is possible to solve the field equations.
-\end{itemize}
-
-For $\nabla_\sigma \mathcal{S}_{\mu\nu} = 0$ field equations under the \textit{Power-Law} potential
-\begin{itemize}
-  \item It is not possible to solve analytically $\nabla_\sigma \mathcal{S}_{\mu\nu} = 0$
-  \item However, it can be solved numerically.
-  \item Additionally, under the special parametrization, can also be solved numerically.
-  \item The above its true only for $\kappa = 0$
-  \item Comparison between the above two numerical solutions
-  \item The solutions does not vanishes the Ricci tensor $\mathcal{R}_{\mu\nu}$, and also $\mathcal{S}_{\mu\nu}$ tensor, meaning we have two emergent metrics.
-\end{itemize}
-
-For $\nabla_\sigma \mathcal{S}_{\mu\nu} = 0$ field equations under the \textit{Starobinsky} potential
-\begin{itemize}
-  \item It is not possible to solve analytically $\nabla_\sigma \mathcal{S}_{\mu\nu} = 0$
-  \item However, it can be solved numerically.
-  \item Additionally, under the special parametrization, can also be solved analytically.
-  \item The above its true only for $\kappa = 0$
-  \item Comparison between the above two numerical solutions
-  \item The solutions does not vanishes the Ricci tensor $\mathcal{R}_{\mu\nu}$, and also $\mathcal{S}_{\mu\nu}$ tensor, meaning we have two emergent metrics.
-  \item For special initial conditions, it is possible to have a classical bounce.
-\end{itemize}
-
-Comparison between vacuum solution, \textit{Power-Law} and \textit{Starobinsky} potential
-\begin{itemize}
-  \item In order to have non trivial affine function $g(t)$ in the vacuum context $\kappa \neq 0$ as a necessary conditions, whereas for the other two scenarios it is required that $\kappa = 0$.
-  \item The numerical solutions for the potential shows that solutions are extremely sensitve to initial conditions.
-  \item The above can be seen that, for the same initial conditions, the \textit{power-law} potential have scale factor whichs grows exponentially, whereas 
-        the \textit{Starobinsky} potential, gives rises to a scale factor that has a bounce.
-\end{itemize}
-
-\subsection{Antysymmetrize solutions $\nabla_{[\sigma} \mathcal{R}_{\mu]\nu} = 0$ and $\nabla_{[\sigma} \mathcal{S}_{\mu]\nu} = 0$}
-
-For $\nabla_{[\sigma} \mathcal{R}_{\mu]\nu} = 0$ 
-\begin{itemize}
-  \item It is not possible to find analytically solutions (1 equation and two unknown functions $g(t)$ and $h(t)$).
-  \item Under the special parametrization, its possible to solve the field equation numerically.
-\end{itemize}
-
-For  $\nabla_{[\sigma} \mathcal{S}_{\mu]\nu} = 0$ 
-\begin{itemize}
-  \item It is not possible to solve the field equation (1 equation for $g(t)$, $h(t)$, $\phi (t)$ and $\mathcal{V}(\phi)$).
-  \item Under the special parametrization we have 1 equation for $a(t)$, $\phi (t)$ and $\mathcal{V}(\phi)$.
-\end{itemize}
 
 \section{Appendix A: Dimensional Analysis}
 
 In this section we briefly show how to build the action and coupling the scalar field in the absence of the metric tensor, by using a sort of
 \textit{dimensional analysis} technique.
-
-\subsection{Building the action}
 
 In order to build the most general action while preserving the invariance under diffeormophism, we perform a \textit{dimensional analysis} technique. First,
 we define an operator $\mathcal{N}$ to count the number of free index  and a second operator $\mathcal{W}$ to define the weight density of the object. Applying both
@@ -609,62 +273,6 @@ derivatives are contracted with the volume form they give a curvature tensor, an
 curvature satisfy the torsion-free Bianchi identities, which relate some of the several possible contractions of the indices. An  additional argument that 
 helps to drop contraction of indices is that $\mathcal{B}$ is traceless.
 
-\subsection{Coupling the scalar field $\phi$}
-
-In order to form the kinetic term without the metric tensor we proceed just like the subsection before, however, here we are interested in building
-tensor densities of the type $(0,2)$, and additionally we require that it has to be symmetric. Then, the constraint equations are
-\begin{align}
-  m + n + p & = 2 & q & = 1
-\end{align}
-From here we present the table with all possible configuration
-\begin{table}[h]
-  \begin{center}
-    \begin{tabular}{ | p{1cm} | p{1cm} | p{1cm} | p{3.5cm} |}
-    \hline
-    $\mathcal{A}^m$ & $\mathcal{B}^n$ & $\Gamma^p$ & Type of configuration \\ \hline
-    2 & 0 & 0 & $\mathcal{A}\mathcal{A}$  \\
-    1 & 1 & 0 & $\mathcal{A}\mathcal{B}$  \\
-    1 & 0 & 1 & $\mathcal{A}\nabla$    \\
-    0 & 2 & 0 & $\mathcal{B}\mathcal{B}$  \\
-    0 & 1 & 1 & $\mathcal{B}\nabla$   \\
-    0 & 0 & 2 & $\nabla\nabla $     \\ \hline
-    \end{tabular}
-    \caption{Possible terms to contract the kinetic term of the scalar field $\phi$}
-  \end{center}
-  \end{table}
-The first type of term, can only be configurate in one form where two vectorial torsion $\mathcal{A}$ must be contracted with the volumen element
-\begin{equation*}
-    \mathcal{A}_\alpha\mathcal{A}_\beta\mathrm{d}V^{\alpha\beta\mu\nu} 
-\end{equation*}
-meaning that its contributio vanishes completely. The second type, produces only two possible terms
-\begin{equation*}
-    \mathcal{A}_\sigma\mathcal{B}_{\alpha}{}^{\sigma}{}_{\beta}\mathrm{d}V^{\alpha\beta\mu\nu} + 
-    \mathcal{A}_\alpha\mathcal{B}_{\beta}{}^{\mu}{}_{\gamma}\mathrm{d}V^{\alpha\beta\gamma\nu}
-\end{equation*} 
-The first term can not be used because it is an antisymmetric object, therefore its coupling with the kinetic term of the scalar field
-wil vanishes completely, whereas the second produce non trivial contribution. The thir type term has only one contribution
-\begin{equation*}
-  \nabla_\alpha \mathcal{A}_\beta\mathrm{d}V^{\alpha\beta\mu\nu}
-\end{equation*}
-which is trivial. The fourth type has two possible configuration
-\begin{equation*}
-  \mathcal{B}_{\alpha}{}^{\mu}{}_{\beta}\mathcal{B}_{\gamma}{}^{\nu}{}_{\delta}\mathrm{d}V^{\alpha\beta\gamma\delta} + 
-  \mathcal{B}_{\alpha}{}^{\sigma}{}_{\beta}\mathcal{B}_{\sigma}{}^{\mu}{}_{\gamma}\mathrm{d}V^{\alpha\beta\gamma\nu} 
-\end{equation*}
-Here both term have non trivial contribution, however, since we are going to be dealing with the torsion-free sector, both term will no have
-an effective action on the field equaitons. The fith configuration has two possible terms
-\begin{equation*}
-  \nabla_\alpha \mathcal{B}_{\beta}{}^{\mu}{}_{\gamma}\mathrm{d}V^{\alpha\beta\gamma\nu} + 
-  \nabla_\sigma \mathcal{B}_{\alpha}{}^{\sigma}{}_{\beta}\mathrm{d}V^{\alpha\beta\mu\nu}
-\end{equation*}
-Notice that second term will produce a trivial term since its antisymmetric in its two free indices, whereas the first term have a non trivial contribution. Finally,
-the las type
-\begin{equation*}
-  \mathcal{R}_{\alpha\beta}{}^{\mu}{}_{\gamma}\mathrm{d}V^{\alpha\beta\gamma\nu} + 
-  \mathcal{R}_{\alpha\beta}{}^{\sigma}{}_{\sigma}\mathrm{d}V^{\alpha\beta\mu\nu}
-\end{equation*}
-both terms are trivial through Bianchi's identity and the antisymmetry of the volumen element. 
-
 \section{Appendix B: Time coordinate reparametrization}
 
 Under a coordinate transformation, the connection's coefficients changes as
@@ -691,72 +299,6 @@ for $f = \frac{1}{X}\partial_t X$. From here, one have that
 where $X = e^{\int \mathrm{d}t f(t)} = e^{F(t)}$. With the above transformation, it can be checked with ease that the effect of the time
 reparametrisation is a scaling of the other time functions entering in the connection $g(t) \to g(t')$ and $h(t) \to h(t')$.
 
-
-\section{Appendix C: GR as a subspace of PAG}
-
-The field equation is given by
-\begin{equation}
-  \nabla_{[\mu}\left(\mathcal{R}_{\nu]\gamma}\frac{1}{\mathcal{V}(\phi)}\right) 
-  - C \nabla_{[\mu}\left(\partial_{\nu]} \phi \partial_\gamma \phi \frac{1}{\mathcal{V}(\phi)}\right) = 0
-\end{equation}
-A particular solution of the above field equation is given by
-\begin{equation}
-  \nabla_{\mu}\left(\mathcal{R}_{\nu\gamma}\frac{1}{\mathcal{V}(\phi)}\right) 
-  - C \nabla_{\mu}\left(\partial_{\nu} \phi \partial_\gamma \phi \frac{1}{\mathcal{V}(\phi)}\right) = \nabla_\mu \left(\Lambda g_{\nu\gamma}\right)
-\end{equation}
-Notice that in order to be consistent, the object $g_{\mu\nu}$ must be symmetric, so taking the antysymmetrize covariant derivative it vanishes completely, 
-allowing us to recover the field equation. This gives rise a metric tensor named $g_{\mu\nu}$. Next, a particular solution of the above equation is
-\begin{equation}
-  \mathcal{R}_{\mu\nu} - C\partial_\mu \phi \partial_\nu \phi = \Lambda \mathcal{V}(\phi) g_{\mu\nu}
-\end{equation}
-and by using the metric tensor, the above equation can be rewritten in a more well-known equation 
-\begin{equation}
-  \mathcal{R}_{\mu\nu} - \frac{1}{2}\mathcal{R}g_{\mu\nu} + \Lambda \mathcal{V}(\phi) g_{\mu\nu} = 
-  C\left(\partial_\mu \phi \partial_\nu \phi - \frac{1}{2}g_{\mu\nu} (\partial \phi)^2\right)
-\end{equation}
-
-If we vary the action with respect to the scalar field and take the torsion-free limit, then we will have a trivial contribution, however, we can still
-have the field equation for the scalar field by proceeding in a different manner. Taking the divergence $\nabla^\mu$ of the above equation leads to
-\begin{equation}
-  \Lambda g_{\mu\nu}\nabla^{\mu}\mathcal{V}(\phi) =C \left(\nabla^{\mu}\partial_\mu \phi \partial_\nu \phi + \partial_\mu \phi \nabla^{\mu}\partial_\nu \phi
-  - g_{\mu\nu} \partial \phi \nabla^{\mu}\partial \phi \right)
-\end{equation}
-after some simplification, the above equation leads to
-\begin{equation}
-  C \nabla^\mu \nabla_\mu \phi - \Lambda \mathcal{V}'(\phi) = 0
-\end{equation}
-which is the Klein-Gordon field equation. Notice that in order to obtain the above equation we require the existence of the $g_{\mu\nu}$ object, to define the 
-d'Alembert operator. Without this object, it is not possible to obtain a Klein-Gordon field equation, additionally we require that the integration 
-constant $\Lambda \neq 0$ and also we demand that the covariant derivative of $g_{\mu\nu}$ vanishes
-completely, to satisfy the metricity condition.
-
-
-Since, we have the tensor $g_{\mu\nu}$ presented as a particular solution to the field equation. Thus, we need to provied
-an ansatz for this tensor compatible with the symmetries of the cosmological principle. This is donde by computing the Lie derivative of an 
-arbitrary tensor type $(0,2)$ along the Killing vectors that generate the symmetries of rotation and translations. This compute leads to 
-\begin{equation}
-  g_{\mu\nu} = b(t)\mathrm{d}t^2 + a(t)\left(\frac{1}{1 - \kappa r^2} \mathrm{d}r^2 + r^2 \mathrm{d}\theta^2 
-  + r^2 \sin^2 \theta \mathrm{d} \varphi^2 \right)
-\end{equation}
-Demanding that its covariant derivative vaniahes, we found restriction for the above functions in terms of the connection coefficients
-\begin{align}
-  b(t) & = -b_0 & h(t) & = \frac{\dot{a}(t)}{a(t)} & g(t) & = \frac{\dot{a}(t)a(t)}{b_0}
-\end{align}
-
-Replacing the cosmological ansatz for $g$ and $\Gamma$ in the field equation yields to
-\begin{align}
-  0 & = 3\ddot{a}(t) + C a(t)\dot{\phi}^{2}(t) - \Lambda b_0 a(t)\mathcal{V}(\phi) \\
-  0 & = \ddot{a}(t)a(t) + 2\dot{a}^2(t) + 2b_0\kappa - \Lambda b_0 a^2(t)\mathcal{V}(\phi)
-  \end{align}
-Combining the two equations we obtained we get
-\begin{equation}
-  3H^2(t) = \Lambda b_0 \mathcal{V}(\phi) -\frac{1}{2}C \dot{\phi}^2(t) - \frac{3b_0\kappa}{a^2(t)}
-\end{equation}
-where the first function is the Hubble function $H(t)$, here we are able to recover the FRW field equation coupled with a scalar field. Additionally,
-the field equation for the scalar is given by the Klein-Gordon field equation, replacing the cosmological ansatz leads to
-\begin{equation}
-  \ddot{\phi}(t) + 3H(t)\dot{\phi}(t) + \Lambda b_0 \mathcal{V}'(\phi) = 0
-\end{equation}
-Thus we are able to recover Einstein-Hillbert coupled with a scalar field.
+\section{Appendix C: Complete set of field equations}
 
 \end{document}
