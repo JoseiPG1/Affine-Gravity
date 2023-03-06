@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1678124880 "/Users/joseignacioperdiguerogarate/Documents/GitHub/Affine-Gravity/Affine_Gravity.tex" "build/Affine_Gravity.pdf" "Affine_Gravity" 1678124880
-  "/Users/joseignacioperdiguerogarate/Documents/GitHub/Affine-Gravity/Affine_Gravity.tex" 1678124880 18921 53b80b5d35df2cd51ed638aa42d6e480 ""
+["pdflatex"] 1678125814 "/Users/joseignacioperdiguerogarate/Documents/GitHub/Affine-Gravity/Affine_Gravity.tex" "build/Affine_Gravity.pdf" "Affine_Gravity" 1678125815
+  "/Users/joseignacioperdiguerogarate/Documents/GitHub/Affine-Gravity/Affine_Gravity.tex" 1678125814 19746 9fca52bb36c032ff19c9ff20374f7151 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -64,9 +64,9 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1668543006 2826447 baad09eeaa9874dec94c7a13fcd7df16 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "Affine_Gravity.tex" 1678124880 18921 53b80b5d35df2cd51ed638aa42d6e480 ""
-  "build/Affine_Gravity.aux" 1678124880 1501 f14360560844866a158651dcf7fe777b "pdflatex"
-  "build/Affine_Gravity.toc" 1678124880 846 f0eb703d1b5d1884a4acf9f322c8e288 "pdflatex"
+  "Affine_Gravity.tex" 1678125814 19746 9fca52bb36c032ff19c9ff20374f7151 ""
+  "build/Affine_Gravity.aux" 1678125815 1501 afcdd9d72971e4f53e1ed3d71b4725fd "pdflatex"
+  "build/Affine_Gravity.toc" 1678125815 846 73f698d3ecc727b33411ca7ddc3f5109 "pdflatex"
   (generated)
   "build/Affine_Gravity.aux"
   "build/Affine_Gravity.log"
